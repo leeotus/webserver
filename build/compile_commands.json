@@ -8,5 +8,15 @@
   "directory": "/home/flareon/projects/webserver/build/apps",
   "command": "/usr/bin/cc  -I/home/flareon/projects/webserver/build -I/home/flareon/projects/webserver/inc -g -o CMakeFiles/main.dir/main.c.o -c /home/flareon/projects/webserver/apps/main.c",
   "file": "/home/flareon/projects/webserver/apps/main.c"
+},
+{
+  "directory": "/home/flareon/projects/webserver/build/apps",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/sim-server.dir/sim-server.c.o -c /home/flareon/projects/webserver/apps/sim-server.c",
+  "file": "/home/flareon/projects/webserver/apps/sim-server.c"
+},
+{
+  "directory": "/home/flareon/projects/webserver/build/apps",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/sim-client.dir/sim-client.c.o -c /home/flareon/projects/webserver/apps/sim-client.c",
+  "file": "/home/flareon/projects/webserver/apps/sim-client.c"
 }
 ]

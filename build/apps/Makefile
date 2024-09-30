@@ -130,6 +130,34 @@ main/fast:
 	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+# Convenience name for target.
+apps/CMakeFiles/sim-server.dir/rule:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/sim-server.dir/rule
+.PHONY : apps/CMakeFiles/sim-server.dir/rule
+
+# Convenience name for target.
+sim-server: apps/CMakeFiles/sim-server.dir/rule
+.PHONY : sim-server
+
+# fast build rule for target.
+sim-server/fast:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/build
+.PHONY : sim-server/fast
+
+# Convenience name for target.
+apps/CMakeFiles/sim-client.dir/rule:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/sim-client.dir/rule
+.PHONY : apps/CMakeFiles/sim-client.dir/rule
+
+# Convenience name for target.
+sim-client: apps/CMakeFiles/sim-client.dir/rule
+.PHONY : sim-client
+
+# fast build rule for target.
+sim-client/fast:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/build
+.PHONY : sim-client/fast
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -154,6 +182,54 @@ main.c.s:
 	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+sim-client.o: sim-client.c.o
+.PHONY : sim-client.o
+
+# target to build an object file
+sim-client.c.o:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/sim-client.c.o
+.PHONY : sim-client.c.o
+
+sim-client.i: sim-client.c.i
+.PHONY : sim-client.i
+
+# target to preprocess a source file
+sim-client.c.i:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/sim-client.c.i
+.PHONY : sim-client.c.i
+
+sim-client.s: sim-client.c.s
+.PHONY : sim-client.s
+
+# target to generate assembly for a file
+sim-client.c.s:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/sim-client.c.s
+.PHONY : sim-client.c.s
+
+sim-server.o: sim-server.c.o
+.PHONY : sim-server.o
+
+# target to build an object file
+sim-server.c.o:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/sim-server.c.o
+.PHONY : sim-server.c.o
+
+sim-server.i: sim-server.c.i
+.PHONY : sim-server.i
+
+# target to preprocess a source file
+sim-server.c.i:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/sim-server.c.i
+.PHONY : sim-server.c.i
+
+sim-server.s: sim-server.c.s
+.PHONY : sim-server.s
+
+# target to generate assembly for a file
+sim-server.c.s:
+	cd /home/flareon/projects/webserver/build && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/sim-server.c.s
+.PHONY : sim-server.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +239,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... sim-client"
+	@echo "... sim-server"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sim-client.o"
+	@echo "... sim-client.i"
+	@echo "... sim-client.s"
+	@echo "... sim-server.o"
+	@echo "... sim-server.i"
+	@echo "... sim-server.s"
 .PHONY : help
 
 

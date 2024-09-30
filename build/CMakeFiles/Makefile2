@@ -82,6 +82,8 @@ clean: apps/clean
 
 # Recursive "all" directory target.
 apps/all: apps/CMakeFiles/main.dir/all
+apps/all: apps/CMakeFiles/sim-server.dir/all
+apps/all: apps/CMakeFiles/sim-client.dir/all
 .PHONY : apps/all
 
 # Recursive "preinstall" directory target.
@@ -90,6 +92,8 @@ apps/preinstall:
 
 # Recursive "clean" directory target.
 apps/clean: apps/CMakeFiles/main.dir/clean
+apps/clean: apps/CMakeFiles/sim-server.dir/clean
+apps/clean: apps/CMakeFiles/sim-client.dir/clean
 .PHONY : apps/clean
 
 #=============================================================================
@@ -114,7 +118,7 @@ src/clean: src/CMakeFiles/webserver-core.dir/clean
 src/CMakeFiles/webserver-core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/webserver-core.dir/build.make src/CMakeFiles/webserver-core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/webserver-core.dir/build.make src/CMakeFiles/webserver-core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/webserver/build/CMakeFiles --progress-num=3,4 "Built target webserver-core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/webserver/build/CMakeFiles --progress-num=7,8 "Built target webserver-core"
 .PHONY : src/CMakeFiles/webserver-core.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,6 +162,58 @@ main: apps/CMakeFiles/main.dir/rule
 apps/CMakeFiles/main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/clean
 .PHONY : apps/CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target apps/CMakeFiles/sim-server.dir
+
+# All Build rule for target.
+apps/CMakeFiles/sim-server.dir/all:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/webserver/build/CMakeFiles --progress-num=5,6 "Built target sim-server"
+.PHONY : apps/CMakeFiles/sim-server.dir/all
+
+# Build rule for subdir invocation for target.
+apps/CMakeFiles/sim-server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/webserver/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/sim-server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/webserver/build/CMakeFiles 0
+.PHONY : apps/CMakeFiles/sim-server.dir/rule
+
+# Convenience name for target.
+sim-server: apps/CMakeFiles/sim-server.dir/rule
+.PHONY : sim-server
+
+# clean rule for target.
+apps/CMakeFiles/sim-server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/clean
+.PHONY : apps/CMakeFiles/sim-server.dir/clean
+
+#=============================================================================
+# Target rules for target apps/CMakeFiles/sim-client.dir
+
+# All Build rule for target.
+apps/CMakeFiles/sim-client.dir/all:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/depend
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/flareon/projects/webserver/build/CMakeFiles --progress-num=3,4 "Built target sim-client"
+.PHONY : apps/CMakeFiles/sim-client.dir/all
+
+# Build rule for subdir invocation for target.
+apps/CMakeFiles/sim-client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/webserver/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/sim-client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/flareon/projects/webserver/build/CMakeFiles 0
+.PHONY : apps/CMakeFiles/sim-client.dir/rule
+
+# Convenience name for target.
+sim-client: apps/CMakeFiles/sim-client.dir/rule
+.PHONY : sim-client
+
+# clean rule for target.
+apps/CMakeFiles/sim-client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/clean
+.PHONY : apps/CMakeFiles/sim-client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

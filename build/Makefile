@@ -142,6 +142,32 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/main.dir/build.make apps/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named sim-server
+
+# Build rule for target.
+sim-server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim-server
+.PHONY : sim-server
+
+# fast build rule for target.
+sim-server/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-server.dir/build.make apps/CMakeFiles/sim-server.dir/build
+.PHONY : sim-server/fast
+
+#=============================================================================
+# Target rules for targets named sim-client
+
+# Build rule for target.
+sim-client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sim-client
+.PHONY : sim-client
+
+# fast build rule for target.
+sim-client/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/sim-client.dir/build.make apps/CMakeFiles/sim-client.dir/build
+.PHONY : sim-client/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -151,6 +177,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... sim-client"
+	@echo "... sim-server"
 	@echo "... webserver-core"
 .PHONY : help
 

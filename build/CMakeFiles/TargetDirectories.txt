@@ -4,5 +4,7 @@
 /home/flareon/projects/webserver/build/src/CMakeFiles/edit_cache.dir
 /home/flareon/projects/webserver/build/src/CMakeFiles/rebuild_cache.dir
 /home/flareon/projects/webserver/build/apps/CMakeFiles/main.dir
+/home/flareon/projects/webserver/build/apps/CMakeFiles/sim-server.dir
+/home/flareon/projects/webserver/build/apps/CMakeFiles/sim-client.dir
 /home/flareon/projects/webserver/build/apps/CMakeFiles/edit_cache.dir
 /home/flareon/projects/webserver/build/apps/CMakeFiles/rebuild_cache.dir
