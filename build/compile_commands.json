@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/flareon/projects/webserver/build/src",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/webserver/build -I/home/flareon/projects/webserver/inc -g -o CMakeFiles/webserver-core.dir/network/host.c.o -c /home/flareon/projects/webserver/src/network/host.c",
+  "file": "/home/flareon/projects/webserver/src/network/host.c"
+},
+{
+  "directory": "/home/flareon/projects/webserver/build/apps",
+  "command": "/usr/bin/cc  -I/home/flareon/projects/webserver/build -I/home/flareon/projects/webserver/inc -g -o CMakeFiles/main.dir/main.c.o -c /home/flareon/projects/webserver/apps/main.c",
+  "file": "/home/flareon/projects/webserver/apps/main.c"
+}
+]

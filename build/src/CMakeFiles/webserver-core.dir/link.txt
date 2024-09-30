@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwebserver-core.a CMakeFiles/webserver-core.dir/network/host.c.o
+/usr/bin/ranlib libwebserver-core.a
